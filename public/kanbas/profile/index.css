@@ -1,0 +1,14 @@
+/* styles.css */
+
+/* Default styles for all links */
+td ul li a {
+    color: red; /* Default text color for links */
+    border-left: 2px solid transparent; /* Transparent left border for all links */
+    text-decoration: none; /* Remove default underline from links */
+}
+
+/* Styles for selected links */
+td ul li a.selected {
+    color: black; /* Selected text color */
+    border-left-color: black; /* Black left border for selected links */
+}
