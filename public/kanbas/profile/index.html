@@ -4,52 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
-
-<body>
-    <link href="index.css"
-             rel="stylesheet"/>
-
-    <table border="0" width="100%">
-        <tbody>
-            <tr valign="top">
-                <td>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Account</a>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <ul class="list-unstyled">    
+                        <img src="..\images\Northeastern_Huskies_logo.png"  width="100%" height="auto">
+                        <li class="account-icon active-link">
+                            <a href="./index.html">
+                                <i class="fas fa-user"></i> <br>
+                                <span>Account</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Dashboard</a>
+                        <li class="dashboard-icon">
+                            <a href="./index.html">
+                                <i class="fas fa-tachometer-alt"></i> <br>
+                                <span>Dashboard</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="../courses/index.html">Courses</a>
+                        <li class="courses-icon">
+                            <a href="../courses/index.html">
+                                <i class="fas fa-book"></i> <br>
+                                <span>Courses</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Calendar</a>
+                        <li class="calendar-icon">
+                            
+                            <a href="#">
+                                <i class="fas fa-calendar"></i> <br>
+                                <span>Calendar</span>
+                            </a> 
                         </li>
-                        <li>
-                            <a href="#">Inbox</a>
+                        <li class = "inbox-icon">
+                            
+                            <a href="#">
+                                <i class="fas fa-inbox"></i> <br>
+                                <span>Inbox</span>
+                            </a>
+                            
                         </li>
-                        <li>
-                            <a href="#">History</a>
+                        <li class = "history-icon">
+                            <a href="#">
+                                <i class="fas fa-clock"></i> <br>
+                                <span>History</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Studio</a>
+                        <li class = studio-icon>
+                            
+                            <a href="#">
+                                <i class="fas fa-tv"></i> <br>
+                                <span>Studio</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Commons</a>
+                        <li class = commons-icon>
+                            
+                            <a href="#">
+                                <i class="fas fa-arrow-right"></i> <br>
+                                <span>Commons</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Help</a>
+                        <li class = help-icon>
+                            <a href="#">
+                                <i class="fas fa-question"></i> <br>
+                                <span>Help</span>
+                            </a>
                         </li>
                     </ul>
-                </td>
-                <td valign="top">
-                    <ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-unstyled">
                         <li>
                             <a href="#">Notifications</a>
                         </li>
-                        <li>
+                        <li class = "profile-link">
                             <a href="#">Profile</a>
                         </li>
                         <li>
@@ -74,9 +112,12 @@
                             <a href="#">Global Announcements</a>
                         </li>
                     </ul>
-                </td>
-                <td>
+                </div>
+                <div class="col-3 text-center">
                     Adam Melhuish's Profile
+                    <div class="account-icon">
+                        <i class="fas fa-user fa-5x"></i>
+                    </div>
                     <h3>Adam Melhuish</h3> <br>
 
                     <h2>Contact</h2> <br>
@@ -86,17 +127,14 @@
                     <h2>Links</h2>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel">Surprise</a>
 
-                </td>
-                <td>
-                    <a href="./edit.html">
-                        <button>Edit Profile</button>
-                      </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-</body>
+                </div>
+                <div class="col-4">
+                    <a href="./edit.html" class="btn btn-edit-profile">
+                        <i class="fas fa-pencil-alt"></i> Edit Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
 
 </html>

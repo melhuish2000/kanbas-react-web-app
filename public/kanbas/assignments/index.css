@@ -1,0 +1,60 @@
+/* Font Awesome Icons */
+.fas {
+    color: red;
+}
+
+.account-icon .fas {
+    color: gray;
+}
+
+/* Active link styles */
+.active-link {
+    background-color: white;
+    color: red;
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none;
+}
+
+/* Padding and margin for links */
+a.btn-link {
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+/* Styling for the first column */
+.col-2 ul {
+    background-color: white;
+    width: 80px;
+    min-width: 75px;
+    max-width: 85px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.col-2 ul .account-icon a {
+    color: red;
+}
+
+.col-2 ul li:not(.account-icon) {
+    margin: 5px 0;
+}
+
+.col-2 ul li:not(.account-icon) a {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Styling for the second column */
+.col-2 ul li a {
+    text-align: left;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+}

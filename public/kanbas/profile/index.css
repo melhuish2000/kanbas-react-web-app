@@ -1,14 +1,137 @@
-/* styles.css */
 
-/* Default styles for all links */
-td ul li a {
-    color: red; /* Default text color for links */
-    border-left: 2px solid transparent; /* Transparent left border for all links */
-    text-decoration: none; /* Remove default underline from links */
+.fas {
+    color: red;
 }
 
-/* Styles for selected links */
-td ul li a.selected {
-    color: black; /* Selected text color */
-    border-left-color: black; /* Black left border for selected links */
+.account-icon .fas {
+    color: gray;
+}
+
+
+.active-link {
+    background-color: white;
+    color: red;
+}
+
+
+a.btn-link {
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+
+.col-1 ul {
+    background-color: black;
+    width: 80px;
+    min-width: 75px;
+    max-width: 85px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.col-1 ul li{
+    text-decoration: none;
+}
+
+
+
+.col-1 ul .account-icon a {
+    color: red;
+}
+
+.col-1 ul li:not(.account-icon) {
+    margin: 5px 0;
+}
+
+.col-1 ul li:not(.account-icon) a {
+    color: white;
+    margin-left: 10px;
+}
+
+
+.col-1 ul li a {
+    text-align: left;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/* Remove underlines from links inside col-1 ul li and col-2 ul li */
+.col-1 ul li a,
+.col-2 ul li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.col-2 ul {
+    color: red;
+    width: 195px;
+    min-width: 190px;
+    max-width: 200px;
+    padding: 10px 0;
+    text-align: left;
+    margin-left: 22.5px;
+
+}
+
+.col-2 ul li a {
+    color: red;
+    word-wrap: break-word;
+    
+}
+
+.col-2 ul li {
+    margin-bottom: 15px; /* Minimum space between links */
+}
+
+.col-2 ul li:last-child {
+    margin-bottom: 20px; /* Additional space for the last link */
+}
+
+.col-2 ul .profile-link a {
+    color: black; /* Set Profile link color to black */
+}
+
+.profile-link {
+    color: red; /* Set Profile text color to red */
+}
+
+
+.col-3 .account-icon {
+    text-align: left; /* Center the icon and text */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.col-3 .account-icon i {
+    color: red; /* Set icon color to red */
+}
+
+
+.btn-edit-profile {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-edit-profile i {
+    margin-right: 5px; 
 }
