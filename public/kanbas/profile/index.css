@@ -66,7 +66,7 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-/* Remove underlines from links inside col-1 ul li and col-2 ul li */
+
 .col-1 ul li a,
 .col-2 ul li a {
     text-decoration: none;
@@ -97,29 +97,29 @@ a, a:visited, a:hover, a:active {
 }
 
 .col-2 ul li {
-    margin-bottom: 15px; /* Minimum space between links */
+    margin-bottom: 15px; 
 }
 
 .col-2 ul li:last-child {
-    margin-bottom: 20px; /* Additional space for the last link */
+    margin-bottom: 20px; 
 }
 
 .col-2 ul .profile-link a {
-    color: black; /* Set Profile link color to black */
+    color: black; 
 }
 
 .profile-link {
-    color: red; /* Set Profile text color to red */
+    color: red; 
 }
 
 
 .col-3 .account-icon {
-    text-align: left; /* Center the icon and text */
-    margin-top: 20px; /* Adjust the top margin as needed */
+    text-align: left;
+    margin-top: 20px;
 }
 
 .col-3 .account-icon i {
-    color: red; /* Set icon color to red */
+    color: red; 
 }
 
 

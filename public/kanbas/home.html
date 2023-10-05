@@ -1,176 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Title</title>
-</head>
-    <body>
-        <table border="0" width="100%">
-            <tbody>
-                <tr>
-                    <td valign="top">
-                        <ul>
-                            <li>
-                                <a href="./profile/index.html">Account</a>
-                            </li>
-                            <li>
-                                <a href="#">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="./courses/index.html">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#">Calendar</a>
-                            </li>
-                            <li>
-                                <a href="#">Inbox</a>
-                            </li>
-                            <li>
-                                <a href="#">History</a>
-                            </li>
-                            <li>
-                                <a href="#">Studio</a>
-                            </li>
-                            <li>
-                                <a href="#">Commons</a>
-                            </li>
-                            <li>
-                                <a href="#">Help</a>
-                            </li>
-                        </ul>
-                    </td>
-                    <td valign="top">
-                        <ul>
-                            <li>
-                                <a href="home.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Modules</a>
-                            </li>
-                            <li>
-                                <a href="#">Piazza</a>
-                            </li>
-                            <li>
-                                <a href="#">Zoom Meetings</a>
-                            </li>
-                            <li>
-                                <a href="./assignments/index.html">Assignments</a>
-                            </li>
-                            <li>
-                                <a href="#">Quizzes</a>
-                            </li>
-                            <li>
-                                <a href="grades/grades.html">Grades</a>
-                            </li>
-                            <li>
-                                <a href="#">People</a>
-                            </li>
-                            <li>
-                                <a href="#">Panopto Video</a>
-                            </li>
-                            <li>
-                                <a href="#">Discussions</a>
-                            </li>
-                            <li>
-                                <a href="#">Announcements</a>
-                            </li>
-                            <li>
-                                <a href="#">Pages</a>
-                            </li>
-                            <li>
-                                <a href="#">Files</a>
-                            </li>
-                            <li>
-                                <a href="#">Rubrics</a>
-                            </li>
-                            <li>
-                                <a href="#">Outcomes</a>
-                            </li>
-                            <li>
-                                <a href="#">Collaborations</a>
-                            </li>
-                            <li>
-                                <a href="#">Syllabus</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </td>
-                    <td valign="top">
-                        <li>Week 0
-                            <ul>
-                                <li>
-                                    LEARNING OBJECTIVES
-                                    <ul>
-                                        <li>Introduction to the course</li>
-                                        <li>Learn what is Web Development</li>
-                                        <li>Creating a development environment</li>
-                                        <li>Creating a Web Application</li>
-                                        <li>Getting started with the first assignment</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    READING
-                                    <ul>
-                                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    SLIDES
-                                    <ul>
-                                        <li> <a href="#">Introduction to Web Development Links to an external site</a></li>
-                                        <li> <a href="#">Creating an HTTP server with Node.js Links to an external site</a></li>
-                                        <li> <a href="#">Creating a React Application Links to an external site</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            WEEK 1 - HTML
-                            <ul>
-                                <li>
-                                    LEARNING OBJECTIVES
-                                    <ul>
-                                        <li>Learn how to create user interfaces with HTML</li>
-                                        <li>Keep working on assignment 1</li>
-                                        <li>Deploy the assignment to Netlify</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    READING
-                                    <ul>
-                                        <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                        <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </td>
-                    <td valign="top">
-                        <h2>COURSE STATUS</h2>
-                        <ul>
-                            <li> <a href="#">Import existing content</a></li>
-                            <li> <a href="#">Import from Commons</a></li>
-                            <li> <a href="#">Choose Home Page</a></li>
-                            <li> <a href="#">View Course Stream</a></li>
-                            <li> <a href="#">New Announcement</a></li>
-                            <li> <a href="#">New Analytics</a></li>
-                            <li> <a href="#">View Course Notifications</a></li>
 
-                        </ul>
-                        <h2>Coming Up</h2>
-                        <br>
-                        <a href="#">View Calendar</a>
-                        <ul>
-                            <li> <a href="#">Lecture CS4550.12631.202410 Sept 7 at 11:45am</a></li>
-                            <li> <a href="#">Lecture CS4550.12631.202410 Sept 11 at 11:45am</a></li>
-                            <li> <a href="#">Lecture CS5610.06 SP23 Sept 11 at 6pm</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-1">
+                <ul class="list-unstyled">
+                    <img src="images\Northeastern_Huskies_logo.png" width="100%" height="auto">
+                    <li class="account-icon">
+                        <a href="./index.html">
+                            <i class="fas fa-user"></i> <br>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li class="dashboard-icon">
+                        <a href="./index.html">
+                            <i class="fas fa-tachometer-alt"></i> <br>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="courses-icon active-link">
+                        <a href="../courses/index.html">
+                            <i class="fas fa-book"></i> <br>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li class="calendar-icon">
+
+                        <a href="#">
+                            <i class="fas fa-calendar"></i> <br>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li class="inbox-icon">
+
+                        <a href="#">
+                            <i class="fas fa-inbox"></i> <br>
+                            <span>Inbox</span>
+                        </a>
+
+                    </li>
+                    <li class="history-icon">
+                        <a href="#">
+                            <i class="fas fa-clock"></i> <br>
+                            <span>History</span>
+                        </a>
+                    </li>
+                    <li class=studio-icon>
+
+                        <a href="#">
+                            <i class="fas fa-tv"></i> <br>
+                            <span>Studio</span>
+                        </a>
+                    </li>
+                    <li class=commons-icon>
+
+                        <a href="#">
+                            <i class="fas fa-arrow-right"></i> <br>
+                            <span>Commons</span>
+                        </a>
+                    </li>
+                    <li class=help-icon>
+                        <a href="#">
+                            <i class="fas fa-question"></i> <br>
+                            <span>Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <ul>
+                    <li>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Web Development Fall 2023 24545233 > Home</li>
+                            </ol>
+                        </nav>
+                    </li>
+                    <li class="home-link">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Modules</a>
+                    </li>
+                    <li>
+                        <a href="#">Piazza</a>
+                    </li>
+                    <li>
+                        <a href="#">Zoom Meetings</a>
+                    </li>
+                    <li>
+                        <a href="./assignments/index.html">Assignments</a>
+                    </li>
+                    <li>
+                        <a href="#">Quizzes</a>
+                    </li>
+                    <li>
+                        <a href="grades/grades.html">Grades</a>
+                    </li>
+                    <li>
+                        <a href="#">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Panopto Video</a>
+                    </li>
+                    <li>
+                        <a href="#">Discussions</a>
+                    </li>
+                    <li>
+                        <a href="#">Announcements</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#">Files</a>
+                    </li>
+                    <li>
+                        <a href="#">Rubrics</a>
+                    </li>
+                    <li>
+                        <a href="#">Outcomes</a>
+                    </li>
+                    <li>
+                        <a href="#">Collaborations</a>
+                    </li>
+                    <li>
+                        <a href="#">Syllabus</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-secondary">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#week0Collapse" aria-expanded="true">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i> Week 0
+                            <i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                        <div class="collapse show" id="week0Collapse">
+                            <div class="list-group-item list-group-item-action">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i> LEARNING OBJECTIVES
+                                <i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                            </div>
+                            <div class="list-group-item list-group-item-action">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Introduction to the course
+                                    <i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="list-group-item list-group-item-action ml-3">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Learn what is Web Development<i
+                                        class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="list-group-item list-group-item-action ml-3">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Creating a development
+                                    environment<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action ml-3">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Creating a Web Application<i
+                                        class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action ml-3">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Getting started with the first
+                                    assignment<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>READING<i
+                                    class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Full Stack Developer - Chapter 1
+                                    - Introduction<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Full Stack Developer - Chapter 2
+                                    - Creating User Interfaces with HTML<i class="fa fa-check-circle checkmark-icon"
+                                        aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div href="#" class="list-group-item list-group-item-action">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>SLIDES<i
+                                    class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                            </div>
+                            <a href="#" class="list-group-item list-group-item-action slide-link">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Introduction to Web Development<i
+                                        class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action slide-link">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Creating an HTTP server with
+                                    Node.js<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action slide-link">
+                                <div class="ms-lg-3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Creating a React Application<i
+                                        class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-secondary">
+                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#week0Collapse" aria-expanded="true">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Week 1<i
+                                class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>LEARNING OBJECTIVES<i
+                            class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <div class="ms-lg-3">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Learn how to create user interfaces with
+                            HTML<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <div class="ms-lg-3">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Keep working on assignment 1<i
+                                class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <div class="ms-lg-3">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Deploy the assignment to Netlify<i
+                                class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>READING<i
+                            class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <div class="ms-lg-3">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Full Stack Developer - Chapter 1 -
+                            Introduction<i class="fa fa-check-circle checkmark-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div href="#" class="list-group-item list-group-item-action">
+                        <div class="ms-lg-3">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>Full Stack Developer - Chapter 2 -
+                            Creating User Interfaces with HTML<i class="fa fa-check-circle checkmark-icon"
+                                aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <h2>COURSE STATUS</h2>
+                <ul class="list-unstyled">
+                    <li><button class="btn btn-primary">Unpublish</button>
+                        <button class="btn btn-success">Published</button>
+                    
+                    </li>
+                    <li><button class="btn btn-primary">Import existing content</button></li>
+                    <li><button class="btn btn-primary">Import from Commons</button></li>
+                    <li><button class="btn btn-primary">Choose Home Page</button></li>
+                    <li><button class="btn btn-primary">View Course Stream</button></li>
+                    <li><button class="btn btn-primary">New Announcement</button></li>
+                    <li><button class="btn btn-primary">New Analytics</button></li>
+                    <li><button class="btn btn-primary">View Course Notifications</button></li>
+                </ul>
+                <h2>Coming Up</h2>
+                <br>
+                <a href="#" class="btn btn-primary">View Calendar</a>
+                <ul class="list-unstyled">
+                    <li><button class="btn btn-primary">Lecture CS4550.12631.202410 Sept 7 at 11:45am</button></li>
+                    <li><button class="btn btn-primary">Lecture CS4550.12631.202410 Sept 11 at 11:45am</button></li>
+                    <li><button class="btn btn-primary">Lecture CS5610.06 SP23 Sept 11 at 6pm</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
