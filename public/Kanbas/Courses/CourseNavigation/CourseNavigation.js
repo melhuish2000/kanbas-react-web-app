@@ -1,25 +1,24 @@
 function CourseNavigation(active) {
   const links = [
-    { href: "/Kanbas/Courses/Home/screen.html", text: "Home" },
-    { href: "/Kanbas/Courses/Assignments/screen.html", text: "Assignments" },
-    { href: "/Kanbas/Courses/Grades/screen.html", text: "Grades" },
+    { text: "Home", url: "/Kanbas/Courses/Home/screen.html" },
+    { text: "Modules", url: "/Kanbas/Courses/Modules/screen.html" },
+    { text: "Assignments", url: "/Kanbas/Courses/Assignments/screen.html" },
+    { text: "Piazza", url: "/Kanbas/Courses/Piazza/screen.html" },
+    { text: "Zoom", url: "#" },
+    { text: "Grades", url: "/Kanbas/Courses/Grades/screen.html" },
   ];
   return `
-<div class="container-fluid mt-2">
-  <ul class="list-group wd-course-navigation">
+<ul class="wd-course-navigation list-group">
   ${links
     .map(
       (link) => `
-    <li class="list-group-item ${
-      active === link.text ? "active" : ""
-    }" aria-current="true">
-      <a href="${link.href}">${link.text}</a>
+    <li class="list-group-item ${active === link.text ? "active" : ""}">
+      <a href="${link.url}" class="wd-course-navigation-link ">${link.text}</a>
     </li>
-    `
+  `
     )
     .join("")}
-  </ul>
-</div>
+</ul>
 `;
 }
 

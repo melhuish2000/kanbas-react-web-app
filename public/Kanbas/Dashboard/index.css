@@ -1,11 +1,11 @@
-.wd-card-container .col {
-  width: 300px;
-}
-
-/* .wd-card-width {
-  width: 300px;
-} */
-
-.wd-fixed-top-margin {
+body {
   margin-top: 70px;
 }
+
+.wd-course-card-grid .col {
+  width: 300px;
+}
+
+/* .wd-course-card {
+  width: 300px;
+} */

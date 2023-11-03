@@ -1,17 +1,26 @@
 function Dashboard() {
   const courses = [
     {
-      _id: "1",
-      name: "CSC 131",
-      description: "Introduction to Computer Science",
+      _id: "123",
+      number: "CS4550",
+      title: "Web Development",
+      description: "Learn web development",
+      students: [],
+      modules: [],
+      assignmets: [],
     },
-    { _id: "2", name: "CS4550", description: "Web Dev" },
-    { _id: "3", name: "CSC 133", description: "Databases" },
+    {
+      _id: "234",
+      number: "CS3200",
+      title: "Databases",
+      description: "Learn databases",
+    },
   ];
 
   return `
-<div class="wd-fixed-top-margin">
+  <div class="container-fluid">
   <h1>Dashboard</h1>
+  <h2>Card Grid</h2>
 
   <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -49,7 +58,9 @@ function Dashboard() {
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -63,31 +74,75 @@ function Dashboard() {
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
         </form>
       </div>
     </div>
   </nav>
 
-  <div class="row row-cols-1 row-cols-md-3 g-4 wd-card-container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 wd-course-card-grid">
+
     ${courses
       .map(
         (course) => `
-    <div class="col wd-card-width">
+    <div class="col wd-course-card">
+        <div class="card h-100">
+            <img src="/images/react.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+            <h5 class="card-title" id="title">${course.title}</h5>
+            <p class="card-text">
+                ${course.description}
+            </p>
+            </div>
+        </div>
+    </div>
+    `
+      )
+      .join("")}
+
+
+    <div class="col wd-course-card">
       <div class="card h-100">
         <img src="/images/react.png" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">${course.name}</h5>
+          <h5 class="card-title" id="title">Card title</h5>
           <p class="card-text">
-            ${course.description}
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
           </p>
         </div>
       </div>
+    </div>
+    <div class="col wd-course-card">
+      <div class="card h-100">
+        <img src="/images/react.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </p>
+        </div>
       </div>
-      `
-      )
-      .join("")}
-    <div class="col wd-card-width">
+    </div>
+    <div class="col wd-course-card">
+      <div class="card h-100">
+        <img src="/images/react.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col wd-course-card">
       <div class="card h-100">
         <img src="/images/react.png" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -96,7 +151,7 @@ function Dashboard() {
         </div>
       </div>
     </div>
-    <div class="col wd-card-width">
+    <div class="col wd-course-card">
       <div class="card h-100">
         <img src="/images/react.png" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -108,71 +163,35 @@ function Dashboard() {
         </div>
       </div>
     </div>
-    <div class="col wd-card-width">
+    <div class="col wd-course-card">
       <div class="card h-100">
         <img src="/images/react.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
             This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col wd-card-width">
-      <div class="card h-100">
-        <img src="/images/react.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
+            lead-in to additional content. This content is a little bit
+            longer.
           </p>
         </div>
       </div>
     </div>
   </div>
 
-  <hr />
-
+  <h2>Cards</h2>
   <div class="card" style="width: 18rem">
     <img src="/images/react.png" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem">
-    <img src="/images/react.png" class="card-img-top" alt="..." />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem">
-    <img src="/images/react.png" class="card-img-top" alt="..." />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
       </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 </div>
-`;
+    `;
 }
 
 export default Dashboard;

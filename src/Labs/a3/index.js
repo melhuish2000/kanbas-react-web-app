@@ -1,17 +1,27 @@
 import JavaScript from "./JavaScript";
 import PathParameters from "./PathParameters";
-import ConditionalOutput from "./ConditionalOutput";
-import TodoItem from "./todo/TodoItem";
-import TodoList from "./todo/TodoList";
+import TodoItem from "./todos/TodoItem";
+import TodoList from "./todos/TodoList";
+
 function Assignment3() {
   return (
     <div>
       <h1>Assignment 3</h1>
       <TodoList />
-      <TodoItem todo={{ done: true, title: "TODO 123", status: "COMPLETE" }} />
-      <TodoItem todo={{ done: true, title: "TODO 123", status: "COMPLETE" }} />
-      <TodoItem todo={{ done: true, title: "TODO 123", status: "COMPLETE" }} />
-      <ConditionalOutput />
+      <TodoItem
+        todo={{
+          done: true,
+          title: "Make Dinner",
+          status: "Done",
+        }}
+      />
+      <TodoItem
+        todo={{
+          done: true,
+          title: "pick up kids",
+          status: "In Progress",
+        }}
+      />
       <PathParameters />
       <JavaScript />
     </div>

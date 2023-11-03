@@ -1,29 +1,23 @@
-.wd-course-navigation {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.wd-course-navigation.list-group {
+ul.wd-course-navigation.list-group {
   border-radius: 0px;
+  margin-left: 20px;
 }
-
-.wd-course-navigation .list-group-item {
+ul.wd-course-navigation .list-group-item {
   border: none;
-  color: red;
 }
 
-.wd-course-navigation .list-group-item a {
-  color: red;
-  text-decoration: none;
-}
-
-.wd-course-navigation .list-group-item.active a {
-  color: black;
-}
-
-.wd-course-navigation .list-group-item.active {
+ul.wd-course-navigation .list-group-item.active {
   color: black;
   background-color: white;
   border: none;
   border-left: 2px solid black;
+}
+
+ul.wd-course-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+ul.wd-course-navigation .list-group-item.active a {
+  color: black;
 }
