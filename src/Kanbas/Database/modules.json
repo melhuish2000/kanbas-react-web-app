@@ -29,27 +29,7 @@
     "_id": "M102",
     "name": "Fuel and Combustion",
     "description": "Understanding rocket fuel, combustion processes, and efficiency.",
-    "course": "RS101",
-    "lessons": [
-      {
-        "_id": "L201",
-        "name": "Rocket Fuel",
-        "description": "Overview of different types of rocket fuels.",
-        "module": "M102"
-      },
-      {
-        "_id": "L202",
-        "name": "Combustion Processes",
-        "description": "Understanding combustion processes and efficiency.",
-        "module": "M102"
-      },
-      {
-        "_id": "L203",
-        "name": "Combustion Instability",
-        "description": "Understanding combustion instability and mitigation.",
-        "module": "M102"
-      }
-    ]
+    "course": "RS101"
   },
   {
     "_id": "M103",

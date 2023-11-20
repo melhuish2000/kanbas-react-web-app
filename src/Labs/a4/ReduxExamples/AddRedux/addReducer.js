@@ -6,8 +6,8 @@ const addSlice = createSlice({
   name: "add",
   initialState,
   reducers: {
-    add: (state, { payload }) => {
-      state.sum = payload.a + payload.b;
+    add: (state, action) => {
+      state.sum = action.payload.a + action.payload.b;
     },
   },
 });

@@ -7,12 +7,21 @@ function ObjectStateVariable() {
       <pre>{JSON.stringify(person, null, 2)}</pre>
       <input
         value={person.name}
-        onChange={(e) => setPerson({ ...person, name: e.target.value })}
+        onChange={(e) =>
+          setPerson({
+            ...person,
+            name: e.target.value,
+          })
+        }
       />
       <input
+        // type="number"
         value={person.age}
         onChange={(e) =>
-          setPerson({ ...person, age: parseInt(e.target.value) })
+          setPerson({
+            ...person,
+            age: parseInt(e.target.value),
+          })
         }
       />
     </div>

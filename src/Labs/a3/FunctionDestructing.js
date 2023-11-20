@@ -1,19 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
-
 function FunctionDestructing() {
-  const { todos } = useSelector((state) => state.todosReducer);
-
   const add = (a, b) => a + b;
   const sum = add(1, 2);
-  const subtract = ({ b, a }) => a - b;
-  const difference = subtract({ a: 4, b: 2, c: 234 });
+  const subtract = ({ a, b }) => a - b;
+  const difference = subtract({ a: 4, b: 2 });
   return (
     <div>
       <h2>Function Destructing</h2>
-      {todos.map((todo) => (
-        <div>{todo.title}</div>
-      ))}
       const add = (a, b) =&gt; a + b;
       <br />
       const sum = add(1, 2);

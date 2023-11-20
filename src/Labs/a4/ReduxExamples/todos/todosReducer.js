@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
   todos: [
     { id: "1", title: "Learn React" },
@@ -7,25 +6,20 @@ const initialState = {
   ],
   todo: { title: "Learn Mongo" },
 };
-
-const todoReducer = createSlice({
+const todosSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
-    setTodo: (state, action) => {
-      state.todo = action.payload;
-    },
     addTodo: (state, action) => {
       const newTodos = [
         ...state.todos,
-        { ...state.todo, id: new Date().getTime().toString() },
+        { ...action.payload, id: new Date().getTime().toString() },
       ];
       state.todos = newTodos;
       state.todo = { title: "" };
     },
     deleteTodo: (state, action) => {
       const newTodos = state.todos.filter((todo) => todo.id !== action.payload);
-
       state.todos = newTodos;
     },
     updateTodo: (state, action) => {
@@ -35,8 +29,10 @@ const todoReducer = createSlice({
       state.todos = newTodos;
       state.todo = { title: "" };
     },
+    setTodo: (state, action) => {
+      state.todo = action.payload;
+    },
   },
 });
-
-export const { setTodo, addTodo, deleteTodo, updateTodo } = todoReducer.actions;
-export default todoReducer.reducer;
+export const { addTodo, deleteTodo, updateTodo, setTodo } = todosSlice.actions;
+export default todosSlice.reducer;
