@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { useEffect } from "react";
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
     id: 1,

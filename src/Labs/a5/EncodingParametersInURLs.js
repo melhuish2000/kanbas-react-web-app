@@ -1,7 +1,9 @@
 import axios from "axios";
+import { useState, useEffect } from "react";
 function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
+  const [welcome, setWelcome] = useState("");
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
     const response = await
@@ -13,6 +15,11 @@ function EncodingParametersInURLs() {
       `http://localhost:4000/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
+  const fetchWelcome = async () => {
+    const response = await axios.get("http://localhost:4000/a5/welcome");
+    setWelcome(response.data);
+  };
+
 
   useEffect(() => {
     fetchWelcome();

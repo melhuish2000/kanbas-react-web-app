@@ -25,6 +25,15 @@ function WorkingWithArrays() {
     setTodo({});
   };
 
+  const fetchTodos = async () => {
+    const response = await axios.get(API);
+    setTodos(response.data);
+  };
+
+  const fetchTodoById = async (id) => {
+    const response = await axios.get(`${API}/${id}`);
+    setTodo(response.data);
+  }
 
 
   useEffect(() => {

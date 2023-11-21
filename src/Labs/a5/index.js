@@ -1,5 +1,6 @@
 // Import necessary libraries
 import React from "react";
+import WorkingWithArrays from "./WorkingWithArrays";
 import EncodeParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithObjects from "./WorkingWithObjects";
 function Assignment5() {
@@ -8,6 +9,7 @@ function Assignment5() {
       <h1>Assignment 5</h1>
       <WorkingWithObjects />
       <EncodeParametersInURLs />
+      <WorkingWithArrays />
       <div className="list-group">
         <a href="http://localhost:4000/a5/welcome" className="list-group-item">
           Welcome
