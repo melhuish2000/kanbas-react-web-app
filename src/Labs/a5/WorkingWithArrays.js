@@ -17,6 +17,7 @@ function WorkingWithArrays() {
     setTodos(todos.filter((t) => t.id !== todo.id));
   };
 
+
   const updateTodo = async () => {
     const response = await axios.put(
       `${API}/${todo.id}`, todo);
@@ -72,17 +73,16 @@ function WorkingWithArrays() {
       <button onClick={updateTodo}>
         Update Todo
       </button>
+      <button onClick={() => deleteTodo(todo)} >
+              Remove
+            </button>
       <ul className="list-group">
         {todos.map((todo) => (
           <li key={todo.id} className="list-group-item">
             <button onClick={() => fetchTodoById(todo.id)} >
               Edit
             </button>
-           <button
-                onClick={() => deleteTodo(todo)}
-                className="btn btn-danger float-end ms-2">
-                Delete
-            </button>
+            
             <input
               checked={todo.completed}
               type="checkbox" readOnly
@@ -96,4 +96,5 @@ function WorkingWithArrays() {
     </div>
   );
 }
+
 export default WorkingWithArrays;
